@@ -1,3 +1,15 @@
+@keyframes anima{
+    0%{
+        transform: scale(1);
+    }
+
+    100%{
+        transform: scale(1.05);
+    }
+}
+
+
+
 /* RESET */
 
 *{
@@ -120,9 +132,12 @@ body{
     flex-direction: column;
     align-items: center;
     padding: 30px;
-    margin-top: 30px;
-    margin: 15px 650px 30px;
+    margin: 15px 80px 30px;
     text-align: center;
+}
+
+.conteudo-titulo{
+    font-size: 32px;
 }
 
 .conteudo-paragrafo{
@@ -155,6 +170,12 @@ body{
     margin: 0 auto;
 }
 
+.conteudo-bloco1:hover{
+    animation-name: anima;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
 .conteudo-bloco1 > h3{
     font-size: 20px;
     padding-bottom: 10px;
@@ -174,7 +195,7 @@ body{
 
 .rodape-titulo{
     font-size: 30px;
-    margin-top: 100px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -182,7 +203,7 @@ body{
     display: flex;
     flex-direction: row;
     text-align: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 50px;
 }
 
@@ -196,6 +217,14 @@ body{
 /* RESPONSIVO */
 /* tablet */
 @media screen and (max-width:1200px){
+
+    .cabecalho-imagem{
+        margin-left: 10px;
+    }
+
+    .cabecalho2-titulo{
+        font-size: 35px;
+    }
     .cabecalho2{
         display: grid;
         text-align: center;
@@ -208,7 +237,6 @@ body{
     }
     .cabecalho2-imagem{
         margin: 0 auto;
-        margin-bottom: 20px;
 
     }
 
@@ -225,16 +253,21 @@ body{
     }
 
     .conteudo-bloco1{
-        width: 300px;
-        height: 300px;
+        margin: 0 auto;
     }
     .conteudo-bloco1 > h3, .conteudo-bloco1 > p{
         padding: 10px;
     }
 
     .rodape-dados{
-        padding: 60px;
+        padding: 20px;
         margin: 0;
+        margin-bottom: 30px;
+    }
+
+    .rodape-dados > div{
+        margin: 20px auto;
+        padding: 10px;
     }
 
 }
@@ -245,10 +278,15 @@ body{
 
     .cabecalho-ini{
         padding: 20px;
+        margin: 0 auto;
     }
 
     .cabecalho-botao{
         display: none;
+    }
+
+    .cabecalho2-titulo{
+        font-size: 30px;
     }
 
     .cabecalho2-botoes{
@@ -263,7 +301,6 @@ body{
     }
 
     .cabecalho2-imagem{
-        padding: 40px;
         width: 100%;
         height: auto;
     }
@@ -273,19 +310,30 @@ body{
     }
 
     .conteudo-principal{
-        padding: 70px;
+        padding: 40px;
         margin: 0 auto;
-    }
-
-    .rodape-titulo{
-        padding: 50px;
     }
 
     .rodape{
         margin: 0 auto;
     }
 
+    .rodape-titulo{
+        padding: 20px;
+        margin: 10px auto;
+        margin-top: 50px;
+    }
+
     .rodape-dados{
         flex-direction: column;
+        display: flex;
+        padding: 10px;
+        font-size: 20px;
     }
+
+    .rodape-dados > div{
+        margin: 20px auto;
+        padding: 10px;
+    }
+
 }
