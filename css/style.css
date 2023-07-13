@@ -8,8 +8,6 @@
     }
 }
 
-
-
 /* RESET */
 
 *{
@@ -42,7 +40,6 @@ body{
     display: flex;
     align-items: center;
     padding: 50px;
-    margin-bottom: 50px;
 }
 .cabecalho-imagem{
     width: 50px;
