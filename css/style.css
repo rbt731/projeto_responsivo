@@ -18,6 +18,8 @@
     outline: none;
 }
 
+/* VARIAVEIS */
+
 body{
     font-family: Verdana;
     font-size: 100%;
@@ -28,12 +30,18 @@ body{
                          'rodape';
 }
 
+:root{
+
+    --corPri:#a84747;
+    --corSec:#fff;
+
+}
 /* HEADER */
 
 .cabecalho{
     grid-area: cabecalho;
-    background-color: #ff6b81;
-    color: #fff;
+    background-color: var(--corPri);
+    color: var(--corSec);
 }
 
 .cabecalho-ini{
@@ -52,17 +60,17 @@ body{
 
 .cabecalho-botao{
     border-radius: 5px;
-    border: 2px solid #fff;
-    background-color: #ff6b81;
-    color: #fff;
+    border: 2px solid var(--corSec);
+    background-color: var(--corPri);
+    color: var(--corSec);
     padding: 15px;
     margin-right: 50px;
 }
 
 .cabecalho-botao:hover{
     cursor: pointer;
-    background-color: #fff;
-    color: #ff6b81;
+    background-color: var(--corSec);
+    color: var(--corPri);
     transition: all 0.3s linear;
 }
 
@@ -96,9 +104,9 @@ body{
 
 .cabecalho2-botao1, .cabecalho2-botao2{
     border-radius: 5px;
-    border: 2px solid #fff;
-    background-color: #ff6b81;
-    color: #fff;
+    border: 2px solid var(--corSec);
+    background-color: var(--corPri);
+    color: var(--corSec);
     padding: 20px;
     margin-right: 50px;
     width: 180px;
@@ -108,8 +116,8 @@ body{
 
 .cabecalho2-botao1:hover, .cabecalho2-botao2:hover{
     cursor: pointer;
-    background-color: #fff;
-    color: #ff6b81;
+    background-color: var(--corSec);
+    color: var(--corPri);
     transition: all 0.3s linear;
 }
 
@@ -138,7 +146,7 @@ body{
 }
 
 .conteudo-paragrafo{
-    color: #ff6b81;
+    color: var(--corPri);
     padding: auto;
     margin-bottom: 20px;
 }
@@ -160,7 +168,7 @@ body{
 }
 
 .conteudo-bloco1{
-    background-color: #ff6b81;
+    background-color: var(--corPri);
     border-radius: 7px;
     padding: 20px;
     height: 200px;
@@ -179,15 +187,15 @@ body{
 }
 
 .conteudo-bloco1 > p{
-    color: #fff;
+    color: var(--corSec);
 }
 
 /* FOOTER */
 
 .rodape{
     grid-area: rodape;
-    background-color: #ff6b81;
-    color: #fff;
+    background-color: var(--corPri);
+    color: var(--corSec);
 }
 
 .rodape-titulo{
