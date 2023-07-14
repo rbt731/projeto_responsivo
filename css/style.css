@@ -32,7 +32,7 @@ body{
 
 :root{
 
-    --corPri:#a84747;
+    --corPri:#78247a;
     --corSec:#fff;
 
 }
@@ -171,7 +171,6 @@ body{
     background-color: var(--corPri);
     border-radius: 7px;
     padding: 20px;
-    height: 200px;
     margin: 0 auto;
 }
 
