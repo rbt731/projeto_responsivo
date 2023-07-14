@@ -170,8 +170,8 @@ body{
 .conteudo-bloco1{
     background-color: var(--corPri);
     border-radius: 7px;
-    padding: 20px;
-    margin: 0 auto;
+    padding: 40px;
+    
 }
 
 .conteudo-bloco1:hover{
