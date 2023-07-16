@@ -103,6 +103,8 @@ body{
 }
 
 .cabecalho2-botao1, .cabecalho2-botao2{
+    display: flex;
+    justify-content: center;
     border-radius: 5px;
     border: 2px solid var(--corSec);
     background-color: var(--corPri);
